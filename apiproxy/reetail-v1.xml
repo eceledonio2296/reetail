@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="12" name="reetail-v1">
+    <Basepaths>/reetail/v1</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1617729574565</CreatedAt>
+    <CreatedBy>eceledonio@nearbpo.com</CreatedBy>
+    <Description>/retail/v1</Description>
+    <DisplayName>reetail-v1</DisplayName>
+    <LastModifiedAt>1618852731205</LastModifiedAt>
+    <LastModifiedBy>eceledonio@nearbpo.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:b5b964cb600bc0a0d40f733ca4dfde3667d7edddd123ee57b88980e431fa30d9e27962b5d34aa2fdb8ca05e048c7fa4639c1f19c25a6be2fb3da95a635e304a7:us-west-2</ManifestVersion>
+    <Policies>
+        <Policy>AM-400JSONThreat</Policy>
+        <Policy>AM-RemoveAuth</Policy>
+        <Policy>AM-SetCORSHeader</Policy>
+        <Policy>AM-StripTargetCORS</Policy>
+        <Policy>BA-AddAuthHeader</Policy>
+        <Policy>EV-DebugBasicAuth</Policy>
+        <Policy>EV-ExtractAddress</Policy>
+        <Policy>EV-ExtractLatLng</Policy>
+        <Policy>FC-BackendCredentials</Policy>
+        <Policy>J2X-Convert</Policy>
+        <Policy>JS-AddAddress</Policy>
+        <Policy>JTP-Protect</Policy>
+        <Policy>KVM-GetCredentials</Policy>
+        <Policy>O2-VerifyToken</Policy>
+        <Policy>Q-EnforceQuota</Policy>
+        <Policy>RC-ProductsCache</Policy>
+        <Policy>RF-404NotFound</Policy>
+        <Policy>RF-InvalidContentType</Policy>
+        <Policy>RF-PreflightCORS</Policy>
+        <Policy>SA-SpikeArrest</Policy>
+        <Policy>SC-GoogleGeocode</Policy>
+        <Policy>VAK-VerifyKey</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>openapi://association.json</Resource>
+        <Resource>jsc://JS-AddAddress.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>
